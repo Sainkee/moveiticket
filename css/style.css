@@ -78,6 +78,7 @@ body {
 
 .header .container .menu a svg {
     margin-bottom: 5px;
+    fill: black;
 }
 
 .header .container .menu a:hover {
