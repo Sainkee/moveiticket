@@ -78,11 +78,19 @@
         </nav>
         <div class="user-actions">
           <div
-            class="signin"
+            class="signin btnStyle"
             onclick="document.getElementById('id01').style.display='block'"
           >
             Sign in
           </div>
+        
+            <span onclick="signOutHandler()" class="btnStyle signOut"
+              >sign Out</span
+            >
+            <span onclick="bookTicketHandler()" class="btnStyle bookbtn"
+              >Book Ticket</span
+            >
+        
         </div>
         <label class="openmenu">
           <svg
@@ -133,7 +141,7 @@
               required
             />
 
-            <button type="submit">Login</button>
+            <button onclick="loginHandler()" type="submit">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember" />
               Remember me
@@ -495,7 +503,7 @@
           </a>
         </nav>
         <div class="user-actions">
-          <div class="signin">Sign in</div>
+          <div onclick="loginHandler()" class="signin">Sign in</div>
         </div>
       </div>
     </div>
